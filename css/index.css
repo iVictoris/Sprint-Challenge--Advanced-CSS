@@ -247,6 +247,7 @@ footer {
   padding: 1.5%;
   border-radius: 0.2rem;
   display: flex;
+  flex-flow: row;
   justify-content: center;
   align-items: center;
 }
