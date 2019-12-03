@@ -6,7 +6,7 @@ nav {
   align-items: center;
   h1 {
     font-size: 4rem;
-    margin-bottom: 1%;
+    margin: 1% 0;
   }
   .links {
     font-size: 1.2rem;
@@ -26,6 +26,14 @@ nav {
     & > a:focus,
     & > a:active {
       color: gray;
+    }
+  }
+
+  @media @phone {
+    .links {
+      width: 100%;
+      margin-bottom: 2%;
+      color: darkgray;
     }
   }
 }
