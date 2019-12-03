@@ -77,4 +77,34 @@
       }
     }
   }
+
+  @media @phone {
+    .space-images {
+      img {
+        display: none;
+
+        &:first-child {
+          display: block;
+          width: 100%;;
+        }
+      }
+    }
+
+    .walk {
+      padding: 3%;
+      flex-flow: column-reverse;
+      .walk-img {
+        width: 100%;
+        margin: 0 0 3% 0;
+      }
+
+      .walk-text {
+        width: 100%;
+
+        .btn {
+          .btn-mix(white, 1.5rem, #23293b, 4%, 100%)
+        }
+      }
+    }
+  }
 } // home

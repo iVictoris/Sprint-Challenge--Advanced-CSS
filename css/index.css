@@ -137,6 +137,9 @@ body {
   font-family: 'Ubuntu', sans-serif;
   color: #5E6164;
 }
+body {
+  width: 100vw;
+}
 h1,
 h2,
 h3,
@@ -164,6 +167,7 @@ nav {
   display: flex;
   flex-flow: column;
   align-items: center;
+  width: 100%;
 }
 nav h1 {
   font-size: 4rem;
@@ -192,6 +196,9 @@ nav .links > a:active {
     width: 100%;
     margin-bottom: 2%;
     color: darkgray;
+  }
+  nav img {
+    width: 100vw;
   }
 }
 footer {
@@ -271,4 +278,31 @@ footer {
   width: 100%;
   height: auto;
   border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .home .space-images img {
+    display: none;
+  }
+  .home .space-images img:first-child {
+    display: block;
+    width: 100%;
+  }
+  .home .walk {
+    padding: 3%;
+    flex-flow: column-reverse;
+  }
+  .home .walk .walk-img {
+    width: 100%;
+    margin: 0 0 3% 0;
+  }
+  .home .walk .walk-text {
+    width: 100%;
+  }
+  .home .walk .walk-text .btn {
+    color: white;
+    font-size: 1.5rem;
+    background: #23293b;
+    padding: 4%;
+    width: 100%;
+  }
 }
