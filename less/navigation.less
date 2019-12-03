@@ -1,1 +1,44 @@
 // Navigation code here
+
+nav {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  width: 100%;
+  h1 {
+    font-size: 4rem;
+    margin: 1% 0;
+  }
+  .links {
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: space-evenly;
+    width: 35%;
+    color: gray;
+    margin-bottom: 1%;
+
+    & > a {
+      text-decoration: none;
+    }
+
+    & > a,
+    & > a:visited,
+    & > a:hover,
+    & > a:focus,
+    & > a:active {
+      color: gray;
+    }
+  }
+
+  @media @phone {
+    .links {
+      width: 100%;
+      margin-bottom: 2%;
+      color: darkgray;
+    }
+
+    img {
+      width: 100vw;
+    }
+  }
+}
